@@ -6,6 +6,7 @@
 #include <iostream>
 using namespace std;
 node *head,*tail;
+/*Function which takes values and load into vector*/
 void linked_list::get_array(){
 
     cout<<"please enter the number of elements";
@@ -24,7 +25,7 @@ void linked_list::solve(){
     }
 
 }
-
+/*Function used to insert nodes/data in linked list*/
 void linked_list::insert(int data) {
 
 node *temp;
@@ -43,7 +44,7 @@ else
 }
 
 }
-
+/*Function used to print all the elements of linked list*/
 void linked_list::print(){
     node *temp=head;
     while(temp->next!=NULL){
